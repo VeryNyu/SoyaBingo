@@ -1,18 +1,14 @@
 // app/bingo/[card]/page.tsx
+"use client";
 
-interface PageProps {
-  params: Promise<{
-    card: string;
-  }>;
-}
+import BingoBoard from "@/app/_components/BingoBoard";
 
-export default async function BingoCard({ params }: PageProps) {
-  const { card } = await params;
-  
+
+
+export default function Home() {
   return (
-    <div className="page">
-      <h1>Card Number: {card}</h1>
-      <p>This page displays a randomized Bingo card with {card} as the seed.</p>
-    </div>
+    <main className="page">
+      <BingoBoard />
+    </main>
   );
 }
