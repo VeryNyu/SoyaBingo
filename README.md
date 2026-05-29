@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Soyabon Bingo
+
+A lightweight bingo web app built for streamer community engagement.
+
+Players generate a randomized bingo card filled with recurring stream topics, habits, jokes, or moments to watch for during a broadcast. As events happen live, viewers can toggle tiles to track their progress throughout the stream.
+
+> Name still work-in-progress 👀
+
+## Features
+
+* Randomized bingo card generation
+* Toggle-able bingo tiles
+* Simple and responsive UI
+* Built with full-stack Next.js
+* Fast local development setup
+
+## Tech Stack
+
+* Next.js
+* React
+* TypeScript
+* CSS
 
 ## Getting Started
 
-First, run the development server:
+### Clone the repository
+
+```bash
+git clone <your-repo-url>
+cd soyabon-bingo
+```
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Run the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open your browser and visit:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```txt
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Current Functionality
 
-## Learn More
+The app currently:
 
-To learn more about Next.js, take a look at the following resources:
+* Generates a randomized bingo board from a predefined pool of phrases
+* Allows users to toggle tiles between active/inactive states
+* Uses simple visual feedback (green/white tiles)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Future Ideas
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* Win detection
+* Shareable bingo cards
+* Multiplayer/community syncing
+* Mobile UI improvements
 
-## Deploy on Vercel
+## Live Demo
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+[Soyabon Bingo Live Demo](https://soya-bingo.vercel.app?utm_source=chatgpt.com)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Development Notes
+
+This project is still in early development and primarily serves as a fun experiment in community interaction and Next.js full-stack workflows.
