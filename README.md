@@ -6,6 +6,15 @@ Players generate a randomized bingo card filled with recurring stream topics, ha
 
 > Name still work-in-progress 👀
 
+## Table of Contents
+* [Features](#features)
+* [Tech Stack](#tech-stack)
+* [Getting Started](#getting-started)
+* [Current Functionality](#current-functionality)
+* [Future Ideas](#future-ideas)
+* [Live Demo](https://soya-bingo.vercel.app)
+* [Development Notes](#development-notes)
+
 ## Features
 
 * Randomized bingo card generation
