@@ -1,12 +1,18 @@
-import { createClient } from "@/lib/supabase/server";
+import { getTiles } from "@/utils/bingo-api";
 import { Suspense } from "react";
 
 async function TilesData() {
-  const supabase = await createClient();
-  const { data: tiles } = await supabase.from("tiles").select();
+  const tiles = await getTiles();
 
-  return <pre>{JSON.stringify(tiles, null, 2)}</pre>;
+  return (
+    <div>
+      {tiles?.map(tile => (
+        <p key={tile.id}>{tile.text}</p>
+      ))}
+    </div>
+  );
 }
+
 
 export default function Tiles() {
   return (
